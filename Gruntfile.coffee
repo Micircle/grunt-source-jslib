@@ -67,8 +67,8 @@ module.exports = (grunt) ->
           ]
       wrap:
         options:
-          banner: "<%= banner %>(function(window,#{if jquery then'$,'else''}undefined) {\n"
-          footer: "\n}.call(this,window#{if jquery then',jQuery'else''}));"
+          banner: "<%= banner %>"
+          footer: ""
         src: ['vendor/**/*.js', '<%= dist %>.js']
         dest: '<%= dist %>.js'
 
